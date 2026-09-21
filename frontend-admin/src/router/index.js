@@ -37,6 +37,12 @@ const routes = [
         meta: { title: '借阅管理', icon: 'SwapOutlined' }
       },
       {
+        path: 'circulation',
+        name: 'Circulation',
+        component: () => import('@/views/reports/CirculationReport.vue'),
+        meta: { title: '流通分析报表', icon: 'LineChartOutlined' }
+      },
+      {
         path: 'categories',
         name: 'Categories',
         component: () => import('@/views/categories/CategoryList.vue'),

@@ -35,6 +35,10 @@
           <template #icon><SwapOutlined /></template>
           <span>借阅管理</span>
         </a-menu-item>
+        <a-menu-item key="circulation">
+          <template #icon><LineChartOutlined /></template>
+          <span>流通分析报表</span>
+        </a-menu-item>
         <a-menu-item key="categories">
           <template #icon><AppstoreOutlined /></template>
           <span>分类管理</span>
@@ -106,6 +110,7 @@ import {
   UserOutlined,
   SwapOutlined,
   AppstoreOutlined,
+  LineChartOutlined,
   DownOutlined,
   LogoutOutlined
 } from '@ant-design/icons-vue'
@@ -127,6 +132,7 @@ const currentTitle = computed(() => {
     books: '图书管理',
     readers: '读者管理',
     borrow: '借阅管理',
+    circulation: '流通分析报表',
     categories: '分类管理'
   }
   return titles[selectedKeys.value[0]] || ''
